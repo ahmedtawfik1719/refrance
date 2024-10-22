@@ -1,0 +1,44 @@
+
+<!-------------------------------------------------- start PHP or Lravel -------------------------------------------------------------->
+
+<a href="https://laravel.com/docs/10.x" target="_blank">Installation  Laravel  The PHP Framework </a>
+<a href="https://www.apachefriends.org/" target="_blank">Download  XAMPP  server </a>
+or
+<a href="https://www.wampserver.com/en/" target="_blank">Download  wampserver server </a>
+
+
+
+        <!----------------------------------------------- Start Run php server ------------------------------------------------------>
+
+        php artisan serve
+                                        " تشغيل مشروع لارفيل على الجهاز الشخصي " 
+
+        <!----------------------------------------------- End Run php server ------------------------------------------------------>
+
+
+<!----------- Start Create a larevel file inside the project files  ----------->
+
+        composer create-project laravel/laravel:^10.0 example-app
+                                        "إنشاء مشروع لارفيل على الجهاز الشخصي"
+
+
+<!----------- End Create a larevel file inside the project files ----------->
+<!-------------------------------- Start All git functions -------------------------------->
+        composer install
+                                        " git ignore  وباقى ملفات  vendor تحميل ملفات مشروع  لارفيل مثل ملف الـ  "
+        composer upgrete 
+                                        " git ignore وباقى ملفات  vendor لتحديث ملفات مشروع  لارفيل مثل ملف الـ  "
+        composer update 
+                                        " git ignore وباقى ملفات  vendor لتحديث ملفات مشروع  لارفيل مثل ملف الـ  " 
+        php artisan migrate     
+                                        "  يستخدم الامر لتحديث الداتا بيز الحالة مثل التى التى تم سحبها وبها  ويوجد بها تغيراتجديده "  
+        php artisan storage:link 
+                                        " يستخدم الامر لتفعيل وربط ملفات الاستوردج معاً "   
+        ln -s ../storage/app/public storage 
+                                        " حل مشكلة ربط  وعدم  ظهور الصور ما  بين   ملفات  الاستوردج  والببلك"                   
+        php artisan cache:clear 
+                                        " مسح  الكاش من  خلال الترمنال ويستخدم هذا الامر في حالة تغيير الداتا وعدم استجابة المشروع "
+
+<!-------------------------------- End All git functions -------------------------------->
+
+<!-------------------------------------------------- End PHP or laravel -------------------------------------------------------------->

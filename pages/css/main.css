@@ -1,0 +1,237 @@
+/* تنسيق عام */
+body {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    background: linear-gradient(135deg, #1e2d3d, #0b121b);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 40vh;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header img.logo {
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+header h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 0;
+}
+
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    width: auto;
+    max-width: auto;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+.container2 {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: auto rgba(0, 0, 0, 0.37);
+    width: auto;
+    max-width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: right;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.code-section {
+    margin-bottom: 40px;
+}
+
+.code-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #f0e68c;
+}
+
+.code-block {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+pre {
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.code-block:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* تنسيق الفوتر */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f0e68c;
+}
+
+
+/* تنسيق الزر */
+.left-button {
+    position: absolute;
+    right: 30px; /* تموضع الزر على اليسار */
+    top: 10%;
+    transform: translateY(-50%);
+    padding: 15px 30px;
+    background-color: #1d1d20;
+    color: #fff;
+    border: 1px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* تنسيق القائمة */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+    align-self: start;
+    margin-bottom: 10px; 
+}
+
+nav ul {    
+    display: flex;
+    list-style: none;    
+    margin: 0;
+    padding: 0; 
+    border: #1d1d20;        
+}                                                                   
+nav li {                                                                                                             
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0 20px;   
+    border-radius: 10px;  
+    transition: background-color 0.3s ease; 
+    border: #1d1d20; 
+    
+
+
+
+
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+
+}
+nav a:hover {
+    color: #f0e68c; 
+    border-radius: 10px;  
+
+}   
+nav li:hover {
+    background-color: #1d1d20; 
+
+}
+nav li.active {
+    background-color: #1d1d20; 
+}   
+nav li.active a {
+    color: #f0e68c; 
+}   
+
+
+

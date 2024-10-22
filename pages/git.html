@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> أكواد الـGit </title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- رابط ملف CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- إضافة Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- إضافة Prism.js لتلوين الأكواد -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+
+    <!-- إضافة Font Awesome للأيقونات -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+     <!-- الهدر الخاص بالموقع -->
+     <header>
+        <div class="logo-container">
+            <h2> Ahmed Tawfik</h2>
+            <a href="../index.html">
+                <img src="images/logo.png" alt="Logo" class="logo">
+            </a>
+        </div>
+    </header>
+    <!-- الحاوية الرئيسية -->
+    <div class="container">
+        <h1>مرجع أوامر   - Git </h1>
+            <a class="link" href="https://git-scm.com" target="_blank">  تحميل  الـ Git</a>
+            <p>ملحوظه كل ما هو بين العلامتين ( ) يستبدل النص والعلامتين بالموضح امامه فى الشرح ما غير ذلك لا يستبدل لسلامة تنفيذ الامر بشكل صحيح    
+            </p>
+            <a class="link" href="https://docs.google.com/presentation/d/18xkCQhK2VD6FV7HqD_qemUZPk6wKASU47cgiHxmVt_Y/edit?usp=sharing" target="_blank">  عرض شرح الـ Git</a><br>
+<!------ start Contact for the first time -------------->
+
+        <!-- القسم الأول: أوامر الإتصال -->
+        <section class="code-section">
+            <h3> الإتصال : </h3>
+            <p>بدء الإتصال لأول مرة بين الجهاز ومنفذ الاوامر Git</p>
+            <div class="code-block">
+                <h4>الإتصال بالبريد الالكتروني  </h4>
+                <pre id="html-code1">
+                    <code class="language-html">git config --global user.email "(بريدك الإلكتروني)"</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('html-code1')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>الإتصال باسم المستخدم   </h4>
+                <pre id="html-code2">
+                    <code class="language-html">git config --global user.name "(اسم المستخدم الخاص بك)"</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('html-code2')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>الإتصال باسم المحرر   </h4>
+                <pre id="html-code3">
+                    <code class="language-html">git config --global core.editor "(اسم المحرر)"</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('html-code3')">نسخ الكود</button>
+            </div>
+        </section>
+<!------- End Contact for the first time --------------->
+        <!-- القسم الثاني: أوامر الإنشاء والربط  -->
+        <section class="code-section">
+            <h3>الإنشاء والربط : </h3>
+            <p>بدء بإنشاء ملف git داخل ملفات المشروع وتحميل المشروع إلى github لأول مرة</p>
+
+            <div class="code-block">
+                <h4>    يعمل على اضافة ملف  الـ Git في المشروع  ليتحكم  فى ترجمة ورفع الملفات</h4>
+                <pre id="css-code1">
+                    <code class="language-css">git init</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('css-code1')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>إضافة جميع الملفات  إلى منطقة الانتظار ما قبل الرفع</h4>
+                <pre id="css-code2">
+                    <code class="language-css">git add .</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('css-code2')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>إضافة تعليق حتى يتم  معرفة ما تم  تغيره  فى المشروع من خلال المضيف </h4>
+                <pre id="css-code3">
+                    <code class="language-css">git commit -m " التعليق"</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('css-code3')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>تحويل المستودع من Master الى Main </h4>
+                <pre id="css-code4">
+                    <code class="language-css">git branch -M main</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('css-code4')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>  إضافة رابط الريبو المراد  التحكم بها من خلال الGit </h4>
+                <pre id="css-code5">
+                    <code class="language-css">git remote add origin (رابط المستودع)</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('css-code5')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>رفع الملفات  على الربيو التى تم إتصال بالرابط الخاص بها سابقاً</h4>
+                <pre id="css-code6">
+                    <code class="language-css">git push -u origin main</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('css-code6')">نسخ الكود</button>
+            </div>
+        </section>
+<!--  start Transfer from the old repo to the new one -->
+        <!-- القسم الثالث:  النقل من الريبو القديم إلى الجديد-->
+         <section class="code-section">
+            <h3> النقل : </h3>
+            <p>نقل الكود من مستودع قديم إلى مستودع جديد</p>
+
+            <div class="code-block">
+                <h4>أمر إضافة ربط المستودع  الجديد لتتمكن  من  الرفع على اى من المستودعين</h4>
+                <pre id="js-code1">
+                    <code class="language-js">git remote add new-origin (  رابط المستودع الجديد)</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code1')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4> أمر الرفع  على المستودع  الجديد مع الاحتاظ بالجميع  التفاصيل  مثل  التعليقات والفروع</h4>
+                <pre id="js-code2">
+                    <code class="language-js">git push --mirror new-origin</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code2')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4> أمر  حذف رابط المستودع القديم وعزله عن المشروع</h4>
+                <pre id="js-code3">
+                    <code class="language-js">git remote remove origin</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code3')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>أمر تغيير اسم  المستودع  من  الاسم  الجديد الى الاسم  الاساسي المتعارف  عليه دائمأ</h4>
+                <pre id="js-code4">
+                    <code class="language-js">git remote rename new-origin origin</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code4')">نسخ الكود</button>
+            </div>
+        </section>
+<!--  End Transfer from the old repo to the new one -------------------->
+        <!-- القسم الثالث: >جميع  أوامر الـ Git  -->
+        <!-- <section class="code-section">
+            <h3>جميع  أوامر الـ Git : </h3>
+            <p>يعرض هذا القسم   جميع  أومر الجيت   المتعارف عليها   ويتم  استخدامها</p>
+
+            <div class="code-block">
+                <h4> أخذ نسخة من المستودع الموجود على الانترنت الى الجهاز  الشخصي </h4>
+                <pre id="js-code1">
+                    <code class="language-js">git clone  (رابط المستودع  )</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code1')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>تنبيه المستخدم برسالة</h4>
+                <pre id="js-code2">
+                    <code class="language-js">alert('مرحباً بك في موقع الأكواد!');</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code2')">نسخ الكود</button>
+            </div> -->
+        </section>
+    </div>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="footer-content">
+            <p>حقوق الملكية © 2024 - أحمد توفيق { Ahmed Tawfik } . جميع الحقوق محفوظة.</p>
+            <div class="social-icons">
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=966541558012&text=Hello,%20Engineer%20Ahmed%20Tawfik.%20Could%20you%20please%20contact%20me?%20I%20would%20like%20to%20get%20in%20touch%20with%20you%20for%20potential%20collaboration%20or%20to%20seek%20assistance."target="_blank">
+                 <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://github.com/ahmedtawfik1719" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                </a>
+                <a href="https://www.linkedin.com/in/ahmedtawfik1719" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:ahmedtawfik1719@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- إضافة Prism.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-html.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-css.min.js"></script>
+
+    <!-- رابط ملف JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

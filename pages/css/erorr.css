@@ -1,0 +1,43 @@
+/* تنسيقات الصفحة */
+body {
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0c0c0c;
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+h1 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+.coming-soon {
+    display: inline-block;
+    text-align: center;
+}
+
+.coming-image {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333;
+}
