@@ -37,7 +37,7 @@
             </p>
             <a class="link" href="https://docs.google.com/presentation/d/18xkCQhK2VD6FV7HqD_qemUZPk6wKASU47cgiHxmVt_Y/edit?usp=sharing" target="_blank">  عرض شرح الـ Git</a><br>
 <!------ start Contact for the first time -------------->
-        <!-- القسم الأول: أوامر الإتصال -->
+        <!-- القسم : أوامر الإتصال -->
         <section class="code-section">
             <h3> الإتصال : </h3>
             <p>بدء الإتصال لأول مرة بين الجهاز ومنفذ الاوامر Git</p>
@@ -66,117 +66,292 @@
 <!------- End Contact for the first time --------------->
 
 <!------- Start To build and connect --------------->
-        <!-- القسم الثاني: أوامر الإنشاء والربط  -->
+        <!-- القسم : أوامر الإنشاء والربط  -->
         <section class="code-section">
             <h3>الإنشاء والرفع : </h3>
             <p>بدء بإنشاء ملف git داخل ملفات المشروع ورفع المشروع إلى github لأول مرة</p>
 
             <div class="code-block">
                 <h4>    يعمل على اضافة ملف  الـ Git في المشروع  ليتحكم  فى ترجمة ورفع الملفات</h4>
-                <pre id="css-code1">
-                    <code class="language-css">git init</code>
-                </pre>
-                <button class="copy-btn" onclick="copyCode('css-code1')">نسخ الكود</button>
-            </div>
-            <div class="code-block">
-                <h4>إضافة جميع الملفات  إلى منطقة الانتظار ما قبل الرفع</h4>
-                <pre id="css-code2">
-                    <code class="language-css">git add .</code>
-                </pre>
-                <button class="copy-btn" onclick="copyCode('css-code2')">نسخ الكود</button>
-            </div>
-            <div class="code-block">
-                <h4>إضافة تعليق حتى يتم  معرفة ما تم  تغيره  فى المشروع من خلال المضيف </h4>
-                <pre id="css-code3">
-                    <code class="language-css">git commit -m " التعليق"</code>
-                </pre>
-                <button class="copy-btn" onclick="copyCode('css-code3')">نسخ الكود</button>
-            </div>
-            <div class="code-block">
-                <h4>تحويل المستودع من Master الى Main </h4>
                 <pre id="css-code4">
-                    <code class="language-css">git branch -M main</code>
+                    <code class="language-css">git init</code>
                 </pre>
                 <button class="copy-btn" onclick="copyCode('css-code4')">نسخ الكود</button>
             </div>
             <div class="code-block">
-                <h4>  إضافة رابط الريبو المراد  التحكم بها من خلال الGit </h4>
+                <h4>إضافة جميع الملفات  إلى منطقة الانتظار ما قبل الرفع</h4>
                 <pre id="css-code5">
-                    <code class="language-css">git remote add origin (رابط المستودع)</code>
+                    <code class="language-css">git add .</code>
                 </pre>
                 <button class="copy-btn" onclick="copyCode('css-code5')">نسخ الكود</button>
             </div>
             <div class="code-block">
-                <h4>رفع الملفات  على الربيو التى تم إتصال بالرابط الخاص بها سابقاً</h4>
+                <h4>إضافة تعليق حتى يتم  معرفة ما تم  تغيره  فى المشروع من خلال المضيف </h4>
                 <pre id="css-code6">
-                    <code class="language-css">git push -u origin main</code>
+                    <code class="language-css">git commit -m " التعليق"</code>
                 </pre>
                 <button class="copy-btn" onclick="copyCode('css-code6')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>تحويل المستودع من Master الى Main </h4>
+                <pre id="css-code7">
+                    <code class="language-css">git branch -M main</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('css-code7')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>  إضافة رابط الريبو المراد  التحكم بها من خلال الGit </h4>
+                <pre id="css-code8">
+                    <code class="language-css">git remote add origin (رابط المستودع)</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('css-code8')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>رفع الملفات  على الربيو التى تم إتصال بالرابط الخاص بها سابقاً</h4>
+                <pre id="css-code9">
+                    <code class="language-css">git push -u origin main</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('css-code9')">نسخ الكود</button>
             </div>
         </section>
 <!------- End To build and connect --------------->
 
 <!--  start Transfer from the old repo to the new one -->
-        <!-- القسم الثالث:  النقل من الريبو القديم إلى الجديد-->
+        <!-- القسم :  النقل من الريبو القديم إلى الجديد-->
          <section class="code-section">
             <h3> النقل : </h3>
             <p>نقل الكود من مستودع قديم إلى مستودع جديد</p>
 
             <div class="code-block">
                 <h4>أمر إضافة ربط المستودع  الجديد لتتمكن  من  الرفع على اى من المستودعين</h4>
-                <pre id="js-code1">
+                <pre id="js-code10">
                     <code class="language-js">git remote add new-origin (  رابط المستودع الجديد)</code>
                 </pre>
-                <button class="copy-btn" onclick="copyCode('js-code1')">نسخ الكود</button>
+                <button class="copy-btn" onclick="copyCode('js-code10')">نسخ الكود</button>
             </div>
             <div class="code-block">
                 <h4> أمر الرفع  على المستودع  الجديد مع الاحتاظ بالجميع  التفاصيل  مثل  التعليقات والفروع</h4>
-                <pre id="js-code2">
+                <pre id="js-code11">
                     <code class="language-js">git push --mirror new-origin</code>
                 </pre>
-                <button class="copy-btn" onclick="copyCode('js-code2')">نسخ الكود</button>
+                <button class="copy-btn" onclick="copyCode('js-code11')">نسخ الكود</button>
             </div>
             <div class="code-block">
                 <h4> أمر  حذف رابط المستودع القديم وعزله عن المشروع</h4>
-                <pre id="js-code3">
+                <pre id="js-code12">
                     <code class="language-js">git remote remove origin</code>
                 </pre>
-                <button class="copy-btn" onclick="copyCode('js-code3')">نسخ الكود</button>
+                <button class="copy-btn" onclick="copyCode('js-code12')">نسخ الكود</button>
             </div>
             <div class="code-block">
                 <h4>أمر تغيير اسم  المستودع  من  الاسم  الجديد الى الاسم  الاساسي المتعارف  عليه دائمأ</h4>
-                <pre id="js-code4">
+                <pre id="js-code13">
                     <code class="language-js">git remote rename new-origin origin</code>
                 </pre>
-                <button class="copy-btn" onclick="copyCode('js-code4')">نسخ الكود</button>
+                <button class="copy-btn" onclick="copyCode('js-code13')">نسخ الكود</button>
             </div>
         </section>
 <!--  End Transfer from the old repo to the new one -------------------->
-
 <!--------  Start control------>
-        <!--القسم الثالث: >جميع  أوامر التحكم Git  -->
+        <!--القسم : >جميع  أوامر التحكم Git  -->
         <section class="code-section">
             <h3> التحكم : </h3>
-            <p>جميع روابط التحكم  المتعارف عليها </p>
+            <p>جميع أوامر التحكم  المتعارف عليها </p>
             <div class="code-block">
                 <h4>أمر إضافة ربط المستودع   لتتمكن  من  الرفع عليه</h4>
-                <pre id="js-code1">
+                <pre id="js-code14">
                     <code class="language-js">git remote add new-origin (  رابط المستودع الجديد)</code>
                 </pre>
-                <button class="copy-btn" onclick="copyCode('js-code1')">نسخ الكود</button>
+                <button class="copy-btn" onclick="copyCode('js-code14')">نسخ الكود</button>
             </div>
             <div class="code-block">
-                <h4> يستخدم لعرض جميع  ربط المستودع المتصل مع المشروع</h4>
-                <pre id="js-code2">
-                    <code class="language-js">git remote -v </code>
+                <h4>يستخدم لعرض جميع  ربط المستودع المتصل مع المشروع</h4>
+                <pre id="js-code15">
+                    <code class="language-js">git remote -v</code>
                 </pre>
-                <button class="copy-btn" onclick="copyCode('js-code2')">نسخ الكود</button>
+                <button class="copy-btn" onclick="copyCode('js-code15')">نسخ الكود</button>
             </div>
         </section>
 <!--------  End control------>
 
-    </div>
+<!--------  Start upload------>
+        <!--القسم : >جميع  أوامر الرفع Git  -->
+        <section class="code-section">
+            <h3> الرفع : </h3>
+            <p>جميع أوامر الرفع  المتعارف عليها </p>
+            <div class="code-block">
+                <h4>اضافة جميع الملفات الموجوده فى فولدر الجهاز إلى منطقة الانتظار فى وضع الرفع</h4>
+                <pre id="js-code16">
+                    <code class="language-js">git add .</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code16')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>اضافة ملف او فولدر محدد موجود فى مشروع الجهاز إلى منطقة الانتظار فى وضع الرفع</h4>
+                <pre id="js-code17">
+                    <code class="language-js">git add (اسم الملف او الفولدر)</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code17')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>يستخدم للرفع   على مستودع  الجيت هاب المتصل  بالمشروع المحلي</h4>
+                <pre id="js-code18">
+                    <code class="language-js">git puah origin (اسم الفرع المراد الرفع عليه)</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code18')">نسخ الكود</button>
+            </div>
+        </section>
+<!--------  End upload------>
 
+<!--------  Start comment------>
+        <!--القسم : >جميع  أوامر التعليقات Git  -->
+        <section class="code-section">
+            <h3> التعليقات : </h3>
+            <p> أوامر    التعليقات </p>
+            <div class="code-block">
+                <h4>إضافة التعليق على ما تم تنفيذه ويفضل كتابة ما تم  تعديله على المشرووع</h4>
+                <pre id="js-code19">
+                    <code class="language-js">git commit -m "(التعليق المراد كتابته  )" </code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code19')">نسخ الكود</button>
+            </div>
+        </section>
+<!--------  End comment------>
+
+<!--------  Start download------>
+        <!--القسم : >جميع  أوامر التحميل Git  -->
+        <section class="code-section">
+            <h3> التحميل : </h3>
+            <p>جميع أوامر الرفع  المتعارف عليها </p>
+            <div class="code-block">
+                <h4>يستخدم لتحميل  نسخة من  المشروع  الموجود  على مستودع  الجيت هاب الى الجهاز الشخصى</h4>
+                <pre id="js-code20">
+                    <code class="language-js">git clone (رابط مستودع الجيت هاب المراد التحميل منه)</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code20')">نسخ الكود</button>
+            </div>
+        </section>
+<!--------  End download------>
+
+<!--------  Start Status and History------>
+        <!--القسم : >جميع  أوامر الحالة والسجلات Git  -->
+        <section class="code-section">
+            <h3> الحالة والسجل : </h3>
+            <p>جميع أوامر الرفع  المتعارف عليها </p>
+        <!-------- Status ------>
+            <div class="code-block">
+                <h4>Git معرفة حالة التواقف فى </h4>
+                <pre id="js-code21">
+                    <code class="language-js">git status</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code21')">نسخ الكود</button>
+            </div>
+        <!-------- History ------>
+            <div class="code-block">
+                <h4>لعرض جميع سجلات التعليقات التى تمت على الفرع الحالي</h4>
+                <pre id="js-code22">
+                        <code class="language-js">git log</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code22')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>لعرض جميع سجلات التعليقات التى تمت على الفرع الحالي بشكل مختصر ومنظم</h4>
+                <pre id="js-code23">
+                        <code class="language-js">git log --oneline</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code23')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>لعرض جميع سجلات التعليقات التى تمت على جميع الفروع  بشكل مختصر ومنظم </h4>
+                <pre id="js-code24">
+                        <code class="language-js">git log --oneline --decorate --all --graph</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code24')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>لعرض التغييرات بين منطقة العمل الحالية ,التعليق الأخير </h4>
+                <pre id="js-code25">
+                        <code class="language-js">git diff</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code25')">نسخ الكود</button>
+            </div>
+        </section>
+<!--------  End Status and History------>
+
+<!--------  Start branches------>
+        <!--القسم الثالث: >جميع  أوامر الرفع Git  -->
+        <section class="code-section">
+            <h3> الفروع : </h3>
+            <p>جميع أوامر التعرف على الفروع والتنقل بينهم  والتحكم الكمل فيهما</p>
+            <div class="code-block">
+                <h4> لعرض جميع الفروع الفرعية والاساسية الموجوده فى المستودع</h4>
+                <pre id="js-code26">
+                    <code class="language-js">git branch</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code26')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>إنشاء فرع جديد فى الريبو للعمل عليه على حدي دون الذهاب اليه</h4>
+                <pre id="js-code27">
+                    <code class="language-js">git branch (كتابة اسم  الفرع)</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code27')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>إنشاء فرع جديد فى الريبو والذهاب اليه للعمل عليه  على حدي</h4>
+                <pre id="js-code28">
+                    <code class="language-js">git checkout -b (كتابة اسم  الفرع)</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code28')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4> التنقل من الفرع الحالي الى فرع اخر من الموجودين فى الريبو </h4>
+                <pre id="js-code29">
+                    <code class="language-js">git checkout (اسم الفرع المردا التنقل اليه)</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code29')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>حذف فرع من الفرع الموجودين فى المستودع</h4>
+                <pre id="js-code30">
+                    <code class="language-js">git branch -d (add name branch)</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code30')">نسخ الكود</button>
+            </div>
+            <div class="code-block">
+                <h4>حذف فرع من الفرع الموجودين فى المستودع</h4>
+                <pre id="js-code31">
+                    <code class="language-js">git merge (اسم الفرع المراد دمجه مع الفرع الحالي)</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code31')">نسخ الكود</button>
+            </div>
+        </section>
+<!--------  End branches------>
+
+<!--------  Start Save and delete------>
+        <!--القسم : >جميع  أوامر الحفظ والحذف Git  -->
+        <section class="code-section">
+            <h3> الحفظ والحذف : </h3>
+            <p>جميع أوامر الرفع  حفظ التغيرات  او حذف  </p>
+            <!--------   Save  ------>
+            <div class="code-block">
+                <h4>حفظ مؤقتاً للتغيرات لسهولة التنقل بين الفروع دون فقد التغيرات</h4>
+                <pre id="js-code31">
+                    <code class="language-js">git stash</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code31')">نسخ الكود</button>
+            </div>
+            <!--------   delete  ------>
+            <div class="code-block">
+                <h4>لحذف ملف من ملفات المشروع </h4>
+                <pre id="js-code32">
+                    <code class="language-js">git rm (اسم الملف المراد حذفه)</code>
+                </pre>
+                <button class="copy-btn" onclick="copyCode('js-code32')">نسخ الكود</button>
+            </div>
+        </section>
+<!--------  End Save and delete------>
+    </div>
     <!-- الفوتر -->
     <footer>
         <div class="footer-content">
